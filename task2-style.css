@@ -1,0 +1,20 @@
+.uncheckedlist {
+  background-color: rgb(199, 255, 255);
+}
+.uncheckedbox {
+  list-style-image: url("https://maxcdn.icons8.com/packs/preview-icon/messaging.svg");
+}
+
+.checkedbox {
+  list-style-image: url("https://goodies.icons8.com/web/common/autocomplete/domains/icons.svg");
+  text-decoration: line-through;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("https://maxcdn.icons8.com/packs/preview-icon/editing.svg");
+  transform: translateX(100%);
+}
